@@ -1,4 +1,5 @@
 # Phish hunter
+An automated Python tool for continuous monitoring of domain integrity, identifying active web hosting, and detecting potential phishing threats.
 
 ## Overview
 This Python script provides continuous monitoring of specified domains to detect active web hosting and the presence of potential phishing indicators. Once a domain is confirmed to host a website or a phishing indicator is detected, it is logged and will not be rechecked.
