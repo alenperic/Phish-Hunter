@@ -1,40 +1,40 @@
-# Phish-Hunter
-An automated Python tool for continuous monitoring of domain integrity, identifying active web hosting, and detecting potential phishing threats.
+# Domain Monitoring Tool
 
 ## Overview
-This repository contains a Python script for monitoring domains to check for website hosting and potential phishing indicators. The script is designed to be run continuously and logs information about each domain it monitors.
+This Python script provides continuous monitoring of specified domains to detect active web hosting and the presence of potential phishing indicators. Once a domain is confirmed to host a website or a phishing indicator is detected, it is logged and will not be rechecked.
 
 ## Features
-- Monitors domains for website hosting.
-- Checks for specific phishing indicators on the webpages.
-- Logs domains hosting websites to `output.txt`.
-- Logs domains with detected phishing indicators to `phishing_kit_hosted.txt`.
-- Simplified error logging for unreachable domains or request timeouts.
+- Monitors a list of domains for active web hosting.
+- Checks each domain for specific phishing indicators.
+- Logs each domain only once to prevent redundant checks.
+- Outputs hosted domains to `output.txt` and domains with phishing indicators to `phishing_kit_hosted.txt`.
+- Color-coded console output for easy identification of issues and successful detections.
 
 ## Prerequisites
-- Python 3
+- Python 3.x
 - `requests` library
 
 ## Usage
 
-To run the script, use the following command:
+Before running the script, ensure `entities.txt`, `domains_formats.txt`, and `indicators.txt` are populated with the desired data.
+
+To execute the script:
 
 ```bash
 python hunter.py
 ```
 
-Ensure that `entities.txt`, `domains_formats.txt`, and `indicators.txt` are in the same directory as the script and contain the relevant data.
-
-## Files
-- `hunter.py`: The main script for domain monitoring.
-- `entities.txt`: List of entities to monitor.
-- `domains_formats.txt`: List of domain formats to check for each entity.
-- `indicators.txt`: List of specific indicators that suggest a potential phishing attempt.
-- `output.txt`: Log file for domains hosting a website.
-- `phishing_kit_hosted.txt`: Log file for domains with detected phishing indicators.
+## Files in the Repository
+- `hunter.py`: The main Python script for domain monitoring.
+- `entities.txt`: Contains the entities (e.g., domain names) to be monitored.
+- `domains_formats.txt`: Contains domain formats to be checked for each entity.
+- `indicators.txt`: Contains specific indicators to detect potential phishing attempts.
+- `output.txt`: Auto-generated log file for domains confirmed to host a website.
+- `phishing_kit_hosted.txt`: Auto-generated log file for domains with detected phishing indicators.
+- `requirements.txt`: Lists the Python dependencies required for the script.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions to this project are welcome. Please fork the repository and submit a pull request with your suggested changes.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is released under the [MIT License](LICENSE).
