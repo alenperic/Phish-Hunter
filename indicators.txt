@@ -1,0 +1,4 @@
+/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png
+/images-new/macrumors-simple-logo-dark.svg
+/t/onJLYhr0i8lGqEsV1qBSiuZTsnU=/1600x0/article-new/2023/09/disney.jpg

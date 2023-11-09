@@ -1,0 +1,3 @@
+*-blabla.com
+login123-*.com
+*.com
