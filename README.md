@@ -24,6 +24,8 @@ To execute the script:
 ```bash
 python hunter.py
 ```
+## Demo
+![Demonstration GIF](https://github.com/alenperic/Phish-Hunter/blob/main/demo.gif?raw=true)
 
 ## Files in the Repository
 - `hunter.py`: The main Python script for domain monitoring.
